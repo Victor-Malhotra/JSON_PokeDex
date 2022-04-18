@@ -6,11 +6,12 @@
             "name": "solar-power"
         }
     ],
+    "img": "imgs/charizard.gif",
     "base_experience": 240,
     "height": 17,
     "id": 6,
     "is_default": true,
-    "name": "charizard",
+    "name": "Charizard",
     "order": 7,
     "stats": [{
             "base_stat": 78,
