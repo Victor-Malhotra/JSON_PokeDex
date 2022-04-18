@@ -6,6 +6,7 @@
             "name": "solar-power"
         }
     ],
+    "creator": "Khadeem Bernard",
     "img": "imgs/charmander.gif",
     "base_experience": 62,
     "height": 6,
