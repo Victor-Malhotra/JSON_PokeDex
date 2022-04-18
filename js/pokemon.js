@@ -57,7 +57,7 @@ $("pokemon").mouseup(function() {
     }).appendTo('#pokemon');
 
     //* Get the externa JSON file base on the pokemon you clicked
-    $.getJSON(`JSON/${pokemon}.json`, function(char) {
+    $.getJSON(`../JSON_PokeDex/JSON/${pokemon}.json`, function(char) {
         //* Set name of pokemon to equal name
         var name = char.name;
 
