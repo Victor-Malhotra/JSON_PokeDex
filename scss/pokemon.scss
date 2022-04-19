@@ -32,13 +32,11 @@ body {
         justify-content: space-between;
         flex-direction: row;
         pokemon {
-            box-shadow: 0.3em 0.3em 0 0 white, inset 0.3em 0.3em 0 0 white;
-            cursor: url('../imgs/cursor.png'), auto;
-        }
-        pokemon:hover,
-        pokemon:focus {
-            color: red;
-            box-shadow: 0 0 0 0 white, inset 6em 3.5em 0 0 white;
+            padding-right: 1em;
+            padding-left: 1em;
+            box-shadow: 0.3em 0.3em 0.7em 0.3em white, inset 0.3em 0.3em 1em 0.1em white;
+            cursor: url(../imgs/cursor.png), auto;
+            margin-top: 10px;
         }
     }
     #pokemon {
