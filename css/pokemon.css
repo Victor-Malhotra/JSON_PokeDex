@@ -1,11 +1,19 @@
-.links {
-  margin: 0 auto;
-  cursor: pointer;
-  width: 40em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+@keyframes rotatecw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 body {
@@ -14,6 +22,28 @@ body {
   background-attachment: fixed;
   background-position: center;
   margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+body .links {
+  color: azure;
+  margin: 0 auto;
+  width: 40em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+body .links pokemon {
+  box-shadow: 0.3em 0.3em 0 0 white, inset 0.3em 0.3em 0 0 white;
+  cursor: url("../imgs/cursor.png"), auto;
+}
+
+body .links pokemon:hover,
+body .links pokemon:focus {
+  color: red;
+  box-shadow: 0 0 0 0 white, inset 6em 3.5em 0 0 white;
 }
 
 body #pokemon {
@@ -46,6 +76,23 @@ body #pokemon .pokemon_top {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 20px;
+}
+
+body #pokemon .pokemon_abilities {
+  margin-bottom: 10px;
+}
+
+body #pokemon .pokemon_weight {
+  margin-bottom: 7px;
+}
+
+body #pokemon .pokemon_height {
+  margin-bottom: 10px;
+}
+
+body #pokemon .pokemon_types {
+  margin-bottom: 20px;
 }
 
 body #pokemon .pokemon_stats {

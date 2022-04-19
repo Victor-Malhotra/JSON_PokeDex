@@ -100,13 +100,13 @@ $("pokemon").mouseup(function() {
         for (var i = 0; i < abilities.length; i++) {
 
             // Add the ability to its own div then add to the pokemon_ability div tag
-            document.getElementById(`${pokemon}_abilities`).innerHTML += `<article class="pokemon_ability" id="${pokemon}_ability${i}">${abilities[i].name}</article>`
+            document.getElementById(`${pokemon}_abilities`).innerHTML += `${abilities[i].name}&nbsp;&nbsp; `
         }
 
         // For loop to ge tthe individual types from the types variable and add them to the document
         for (typeofpokemon in types) {
             // Add the individual types to the pokemon_types div
-            document.getElementById(`${pokemon}_types`).innerHTML += `<main class="pokemon_type" id="${pokemon}_type${typeofpokemon}">${types[typeofpokemon].type.name}</main>`
+            document.getElementById(`${pokemon}_types`).innerHTML += `${types[typeofpokemon].type.name}&nbsp;`
         }
 
         // For loop to get the individual stats and their info and add it to the pokemon
@@ -125,8 +125,8 @@ $("pokemon").mouseup(function() {
         }
 
         // Add the pokemons weight and heigth to the pokemon info
-        document.getElementById(`${pokemon}_info`).innerHTML += `<article class="pokemon_weight" id="pokemon_weight">${weight}</article>`
-        document.getElementById(`${pokemon}_info`).innerHTML += `<article class="pokemon_height" id="pokemon_height">${height}</article>`
+        document.getElementById(`${pokemon}_info`).innerHTML += `<article class="pokemon_weight" id="pokemon_weight">Weight: ${weight}</article>`
+        document.getElementById(`${pokemon}_info`).innerHTML += `<article class="pokemon_height" id="pokemon_height">Height: ${height}</article>`
 
         // Add the base experience of the pokemon into base_experience
         document.getElementById(`${pokemon}_top`).innerHTML += `<div class="pokemon_experience" id="${pokemon}_experience"><h3><small>lv.</small>${base_experience}</h3></div><div class="pokemon_name" id="${pokemon}_name"><h1>${name}</h1></div><div><h3>#00${id}</h3></div>`
