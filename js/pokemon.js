@@ -119,9 +119,9 @@ $("pokemon").mouseup(function() {
             document.getElementById(`${pokemon}_stat${statofpokemon}`).innerHTML += `<article class="pokemon_stat_name" id="${pokemon}_stat_name${statofpokemon}">${stats[statofpokemon].stat.name}</article>`
 
             // Add the base stat of the stat to the stat info
-            document.getElementById(`${pokemon}_stat_info${statofpokemon}`).innerHTML += `<article class="pokemon_stat_base" id="${pokemon}_stat_base${statofpokemon}">${stats[statofpokemon].base_stat}</article>`
+            document.getElementById(`${pokemon}_stat_info${statofpokemon}`).innerHTML += `<article class="pokemon_stat_base" id="${pokemon}_stat_base${statofpokemon}">${stats[statofpokemon].base_stat}</article><hr class="divider">`
                 // Add the effort of the stat to the stat info
-            document.getElementById(`${pokemon}_stat_info${statofpokemon}`).innerHTML += `<article class="pokemon_stat_effort" id="${pokemon}_stat_effort${statofpokemon}">${stats[statofpokemon].effort}</article>`
+            document.getElementById(`${pokemon}_stat_info${statofpokemon}`).innerHTML += `<article class="pokemon_stat_effort" id="${pokemon}_stat_effort${statofpokemon}">effort:${stats[statofpokemon].effort}</article>`
         }
 
         // Add the pokemons weight and heigth to the pokemon info

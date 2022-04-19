@@ -38,7 +38,7 @@ body .links {
 body .links pokemon {
   padding-right: 1em;
   padding-left: 1em;
-  box-shadow: 0.3em 0.3em 0.7em 0.3em white, inset 0.3em 0.3em 1em 0.1em white;
+  box-shadow: 0.3em 0.3em 0.7em 0.3em white, inset 0.3em 0.3em 1em 0.1em white;
   cursor: url(../imgs/cursor.png), auto;
   margin-top: 10px;
 }
@@ -105,12 +105,24 @@ body #pokemon .pokemon_stats .pokemon_stat {
   align-items: stretch;
   justify-content: space-evenly;
   flex-direction: column-reverse;
+  border: 1px solid #ffffffee;
+  margin: 0 auto;
+  padding: 3px 3px;
 }
 
 body #pokemon .pokemon_stats .pokemon_stat .pokemon_stat_info {
+  width: 3em;
+  height: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
+}
+
+body #pokemon .pokemon_stats .pokemon_stat .pokemon_stat_info .divider {
+  width: 100%;
+  height: 1px;
+  margin: 0;
 }
 /*# sourceMappingURL=pokemon.css.map */
